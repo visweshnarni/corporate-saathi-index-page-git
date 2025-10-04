@@ -31,36 +31,69 @@
 <body class="bg-slate-50 dark:bg-brand-dark text-slate-800 dark:text-slate-200 font-poppins antialiased">
 
     <!-- Header -->
-    <header id="header" class="bg-white/80 dark:bg-brand-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header id="header" class="bg-white dark:bg-brand-dark/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-brand-purple">CorporateSaathi</a>
-            <div class="hidden lg:flex items-center space-x-6 text-sm">
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
                 <a href="#" class="hover:text-brand-purple transition-colors">Home</a>
                 <a href="#about" class="hover:text-brand-purple transition-colors">About Us</a>
                 <a href="#plans" class="hover:text-brand-purple transition-colors">Plans</a>
                 <a href="#" class="hover:text-brand-purple transition-colors">Process</a>
+                 <!-- Schemes Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-brand-purple transition-colors flex items-center">
+                        Schemes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible">
+                        <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Student Founder</a>
+                        <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Women Founder</a>
+                    </div>
+                </div>
+                 <!-- Services Mega Menu -->
                  <div class="relative group">
                     <button class="hover:text-brand-purple transition-colors flex items-center">
                         Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute left-0 mt-2 w-max bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible">
-                        <div class="p-2 grid grid-cols-2 gap-4">
-                            <!-- Business Registration -->
-                            <div class="relative sub-group">
-                                <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Business Registration &rarr;</a>
-                                <div class="absolute left-full top-0 mt-0 ml-1 w-max bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 sub-group-hover:opacity-100 transition-opacity duration-300 invisible sub-group-hover:visible">
-                                     <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Company Registration</a>
-                                     <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">International Business Setup</a>
-                                     <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Licenses & Registrations</a>
-                                </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible w-max">
+                        <div class="p-4 grid grid-cols-4 gap-x-8">
+                            <!-- Column 1: Business Registration -->
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-brand-purple mb-2">Business Registration</h3>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Company Registration</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">International Business Setup</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Licenses & Registrations</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Web Development</a>
                             </div>
-                            <!-- Tax & Compliance -->
-                             <div class="relative sub-group">
-                                <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Tax & Compliance &rarr;</a>
-                                <div class="absolute left-full top-0 mt-0 ml-1 w-max bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 sub-group-hover:opacity-100 transition-opacity duration-300 invisible sub-group-hover:visible">
-                                     <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">GST & Indirect Tax</a>
-                                     <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Changes in Pvt Ltd Company</a>
-                                </div>
+                            <!-- Column 2: Tax & Compliance -->
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-brand-purple mb-2">Tax & Compliance</h3>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">GST and Other Indirect Tax</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Changes in Pvt Ltd Company</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Changes in LLP</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Mandatory Annual Filings</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Labour Compliance</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Accounting & Tax</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Convert Your Business</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">GST</a>
+                            </div>
+                            <!-- Column 3: Trademark & IP -->
+                             <div class="space-y-2">
+                                <h3 class="font-bold text-brand-purple mb-2">Trademark & IP</h3>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Trademark</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Copyright</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Patent</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Infringement</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Design Registration</a>
+                            </div>
+                            <!-- Column 4: Documentation -->
+                             <div class="space-y-2">
+                                <h3 class="font-bold text-brand-purple mb-2">Documentation</h3>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Free Legal Documents</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Business Contracts</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Personal & Family</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Real Estate</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Notices</a>
+                                <a href="#" class="block px-2 py-1 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">HR Policies</a>
                             </div>
                         </div>
                     </div>
@@ -68,264 +101,563 @@
                 <a href="#contact" class="hover:text-brand-purple transition-colors">Contact</a>
             </div>
             <div class="flex items-center space-x-4">
-                <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700">
-                    <svg id="theme-icon-light" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-icon-dark" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"></path></svg>
+                <a href="tel:+1234567890" class="hidden sm:flex items-center space-x-2 text-slate-600 dark:text-slate-300 hover:text-brand-purple">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.05 11.05 0 005.466 5.465l.761-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V3z"></path></svg>
+                    <span class="text-sm font-medium"></span>
+                </a>
+                 <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <svg id="theme-icon-light" class="w-5 h-5 text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-icon-dark" class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z"></path></svg>
                 </button>
-                <a href="#" class="hidden sm:inline-block bg-brand-purple text-white px-4 py-2 rounded-md hover:bg-brand-purple-light transition-colors text-sm font-semibold">Login</a>
-                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700">
+                <a href="#" class="hidden sm:inline-block bg-brand-purple text-white px-4 py-2 rounded-lg hover:bg-brand-purple-light transition-colors text-sm font-semibold">Login</a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 space-y-2">
              <a href="#" class="block py-2 hover:text-brand-purple">Home</a>
              <a href="#about" class="block py-2 hover:text-brand-purple">About Us</a>
              <a href="#plans" class="block py-2 hover:text-brand-purple">Plans</a>
              <a href="#" class="block py-2 hover:text-brand-purple">Process</a>
+             <a href="#" class="block py-2 hover:text-brand-purple">Schemes</a>
              <a href="#" class="block py-2 hover:text-brand-purple">Services</a>
              <a href="#contact" class="block py-2 hover:text-brand-purple">Contact</a>
              <a href="#" class="block mt-2 bg-brand-purple text-white text-center px-4 py-2 rounded-md hover:bg-brand-purple-light">Login</a>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-28 overflow-hidden hero-bg">
-            <div class="container mx-auto px-6 text-center">
-                <div class="max-w-3xl mx-auto">
-                    <div class="scroll-animate fade-in-up mb-4 flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm p-2 rounded-full mx-auto max-w-max">
-                        <div class="flex items-center text-yellow-400">
-                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                           <svg class="w-5 h-5 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+    <div id="main-content">
+        <main>
+            <!-- Hero Section -->
+            <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-28 overflow-hidden hero-bg">
+                <div class="container mx-auto px-6 text-center">
+                    <div class="max-w-3xl mx-auto">
+                        <div class="scroll-animate fade-in-up mb-4 flex items-center justify-center space-x-3 sm:space-x-4 bg-white/10 backdrop-blur-sm p-2 px-4 rounded-full mx-auto max-w-max">
+                            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                            <div class="hidden sm:flex -space-x-2 overflow-hidden">
+                                <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/women/79.jpg" alt="User review photo">
+                                <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User review photo">
+                                <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/women/44.jpg" alt="User review photo">
+                            </div>
+                            <div class="flex items-center text-yellow-400">
+                               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="grad_4_8">
+                                            <stop offset="80%" stop-color="#FBBF24" />
+                                            <stop offset="80%" stop-color="rgba(255, 255, 255, 0.4)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" fill="url(#grad_4_8)"/>
+                                </svg>
+                            </div>
+                            <p class="text-white text-sm font-medium">4.8/5 <span class="hidden sm:inline">(19k+ Reviews)</span></p>
                         </div>
-                        <p class="text-white text-sm font-medium">4.8 based on Google Reviews</p>
-                    </div>
-                    <h1 class="scroll-animate fade-in-up text-4xl md:text-6xl font-bold text-white mb-6" style="animation-delay: 0.2s;">Your Trusted Partner For Startup Legalities.</h1>
-                    <p class="scroll-animate fade-in-up text-lg text-slate-300 mb-8" style="animation-delay: 0.4s;">Get fast, reliable, and customizable online business solutions & legal services with free expert consultation.</p>
-                    <div class="scroll-animate fade-in-up flex flex-col sm:flex-row items-center justify-center gap-4" style="animation-delay: 0.6s;">
-                        <a href="#" class="w-full sm:w-auto bg-brand-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-transform hover:scale-105">Claim Your Free Consultation</a>
-                        <a href="#" class="w-full sm:w-auto bg-white/20 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition-transform hover:scale-105">Download Catalogue</a>
+                        <h1 class="scroll-animate fade-in-up text-4xl md:text-6xl font-bold text-white mb-6" style="animation-delay: 0.2s;">Your Trusted Partner For Startup Legalities.</h1>
+                        <p class="scroll-animate fade-in-up text-lg text-slate-300 mb-8" style="animation-delay: 0.4s;">Get fast, reliable, and customizable online business solutions & legal services with free expert consultation.</p>
+                        <div class="scroll-animate fade-in-up flex flex-col sm:flex-row items-center justify-center gap-4" style="animation-delay: 0.6s;">
+                            <a href="#" class="w-full sm:w-auto bg-brand-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-transform hover:scale-105">Claim Your Free Consultation</a>
+                            <a href="#" class="w-full sm:w-auto bg-white/20 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition-transform hover:scale-105">Download Catalogue</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Trusted by Section -->
-        <section class="py-12 bg-slate-100 dark:bg-brand-light">
+            </section>
+    
+            <!-- Trusted By Section -->
+            <section class="py-20 bg-slate-100 dark:bg-brand-light overflow-hidden">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16 scroll-animate fade-in-up">Trusted by The Best</h2>
+                </div>
+    
+                <!-- Trusted Partners Marquee -->
+                <div class="scroll-animate fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Our Trusted Partners</h3>
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <!-- Original Logos -->
+                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
+                            <!-- Duplicate Logos for seamless scroll -->
+                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Featured On Marquee -->
+                <div class="mt-20 scroll-animate fade-in-up" style="animation-delay: 0.4s;">
+                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Featured On</h3>
+                    <div class="marquee">
+                        <div class="marquee-content reverse">
+                            <!-- Original Logos -->
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
+                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
+                             <!-- Duplicate Logos for seamless scroll -->
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
+                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Plans Section -->
+            <section id="plans" class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Pick your perfect plan</h2>
+                        <p class="text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto">Launch your business in minutes with Corporatesaathi. Choose the plan that fits your needs.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Startup Plan -->
+                        <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 transition-transform hover:-translate-y-2">
+                            <h3 class="text-xl font-bold">Startup Plan</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6">For new founders</p>
+                            <p class="text-4xl font-bold mb-6">₹999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
+                            <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Company Incorporation</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>PAN/TAN Registration</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Compliance Calendar (Basic)</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Any time free customer support</li>
+                            </ul>
+                            <a href="#" data-plan="Startup Plan" class="get-started-btn w-full block text-center bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Get Started</a>
+                        </div>
+                        <!-- Business Plan -->
+                        <div class="scroll-animate fade-in-up relative bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border-2 border-brand-purple transition-transform hover:-translate-y-2" style="animation-delay: 0.2s;">
+                             <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full uppercase whitespace-nowrap">Recommended by CorporateSaathi</div>
+                            <h3 class="text-xl font-bold">Business Plan</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6">For growing businesses</p>
+                            <p class="text-4xl font-bold mb-6">₹2999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
+                            <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Everything in Startup Plan</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Udyam Registration</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Digital Signature Certificate</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Legal Consultation</li>
+                            </ul>
+                            <a href="#" data-plan="Business Plan" class="get-started-btn w-full block text-center bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Get Started</a>
+                        </div>
+                        <!-- Enterprise Plan -->
+                        <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 transition-transform hover:-translate-y-2" style="animation-delay: 0.4s;">
+                            <h3 class="text-xl font-bold">Enterprise Plan</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6">For scaling companies</p>
+                            <p class="text-4xl font-bold mb-6">₹4999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
+                            <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Everything in Business Plan</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Trademark Registration</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>GST Registration & Compliance</li>
+                               <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Dedicated Account Manager</li>
+                            </ul>
+                            <a href="#" data-plan="Enterprise Plan" class="get-started-btn w-full block text-center bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Why Choose Us Section -->
+            <section id="about" class="py-20 bg-slate-100 dark:bg-brand-light">
+                 <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Why Choose CorporateSaathi?</h2>
+                         <p class="text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto">See how we stack up against the old way of doing things. We're built for modern businesses.</p>
+                    </div>
+                    
+                    <!-- Comparison Table -->
+                    <div class="max-w-4xl mx-auto bg-white dark:bg-brand-dark rounded-2xl shadow-xl overflow-hidden scroll-animate fade-in-up">
+                        <div class="grid md:grid-cols-2">
+                            <!-- CorporateSaathi Column -->
+                            <div class="p-8 bg-slate-50/50 dark:bg-white/5">
+                                <div class="flex items-center gap-3 mb-6">
+                                    <a href="#" class="text-xl font-bold text-brand-purple">CorporateSaathi</a>
+                                </div>
+                                <ul class="space-y-6">
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">All-in-one pricing</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">A single package includes everything you need—no hidden charges or surprise fees.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">Personalized assistance</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">A dedicated expert guides you at every step, providing tailored advice for your business.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">End-to-end Service</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">From document collection to final registration and beyond, we handle it all for you.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">Simplified process</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">Easy-to-follow steps and clear communication for a transparent and stress-free experience.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Others Column -->
+                            <div class="p-8 md:border-l border-slate-200 dark:border-slate-700">
+                                <div class="flex items-center gap-3 mb-6">
+                                    <h3 class="text-xl font-bold text-slate-600 dark:text-slate-300">Others</h3>
+                                </div>
+                                <ul class="space-y-6">
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">Pay for each task</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">Separate charges for every single task add up quickly, leading to unpredictable costs.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">No single point of contact</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">Constantly dealing with different people causes delays, miscommunication, and confusion.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">Limited service scope</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">Only basic tasks are covered; extra services cost significantly more or are unavailable.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex gap-4">
+                                        <svg class="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-800 dark:text-white">Unclear instructions</h4>
+                                            <p class="text-slate-600 dark:text-slate-400 text-sm">Poor guidance and complex jargon lead to errors, frustration, and slower processing.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Authorizations Section -->
+                    <div class="mt-16 text-center scroll-animate fade-in-up">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Official Authorizations & Recognitions</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-6 place-items-center">
+                            <div class="text-center">
+                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/ISO_9001-2015.svg" alt="ISO Certified" class="h-auto w-24 object-contain"/>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">ISO 9001:2015</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://banner2.cleanpng.com/20180810/lpl/500460e06e895fc9fc17e8ad3c05413e.webp" alt="FSSAI" class="h-auto w-24 object-contain"/>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">FSSAI Licensed</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/MSME_logo_%28colour%29.svg" alt="MSME" class="h-auto w-20 object-contain"/>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">MSME Registered</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://ipr.icegate.gov.in/IPR/html5/assets/img/demo/ipr.png" alt="Intellectual Property India" class="h-auto w-24 object-contain"/>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">IP India Partner</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" class="h-auto w-24 object-contain"/>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">Startup India Recognized</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+    
+            <!-- Latest Blogs Section -->
+            <section class="py-20">
+                <div class="container mx-auto px-6">
+                    <div class="flex justify-between items-center mb-12">
+                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Latest Blogs</h2>
+                         <a href="#" class="border border-slate-300 dark:border-slate-600 rounded-full px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">View All</a>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Blog Post 1 -->
+                        <div class="scroll-animate fade-in-up group">
+                            <div class="overflow-hidden rounded-xl mb-4">
+                               <img src="https://images.unsplash.com/photo-1556761175-b413da4b248a?q=80&w=2160&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-2">September 13, 2025</p>
+                            <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What is an ESOP for Private Limited Companies?</a></h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">An Employee Stock Option Plan (ESOP) in India allows employees of Pvt. Ltd. Companies to buy shares at a fixed...</p>
+                        </div>
+                         <!-- Blog Post 2 -->
+                        <div class="scroll-animate fade-in-up group" style="animation-delay: 0.2s;">
+                            <div class="overflow-hidden rounded-xl mb-4">
+                               <img src="https://images.unsplash.com/photo-1522881193457-3158c2a40771?q=80&w=2940&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
+                            <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">How Much Does a Virtual Office Cost in India?</a></h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">In the business world, a professional address is crucial for credibility, but a traditional office comes with a huge...</p>
+                        </div>
+                         <!-- Blog Post 3 -->
+                        <div class="scroll-animate fade-in-up group" style="animation-delay: 0.4s;">
+                            <div class="overflow-hidden rounded-xl mb-4">
+                               <img src="https://images.unsplash.com/photo-1600880292210-85938c1b3f19?q=80&w=2787&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
+                            <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What are the Fees of Registering a Private Ltd Company in India?</a></h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm">For startups and entrepreneurs, understanding the costs and fees associated with registering a Private...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </main>
+    
+        <!-- Footer -->
+        <footer id="footer" class="bg-brand-dark text-slate-300 pt-16 pb-8">
             <div class="container mx-auto px-6">
-                <h3 class="text-center text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-8">Trusted By The Best</h3>
-                <div class="marquee">
-                    <div class="marquee-content">
-                        <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/instamojo.com" alt="Instamojo" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/payoneer.com" alt="Payoneer" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/yourstory.com" alt="YourStory" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" class="h-10 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                         <!-- Duplicate for seamless scroll -->
-                        <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/instamojo.com" alt="Instamojo" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/payoneer.com" alt="Payoneer" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/yourstory.com" alt="YourStory" class="h-8 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                        <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" class="h-10 mx-8 filter grayscale hover:grayscale-0 transition-all dark:invert dark:hover:invert-0"/>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Plans Section -->
-        <section id="plans" class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Pick your perfect plan</h2>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto">Launch your business in minutes with Corporatesaathi. Choose the plan that fits your needs.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Startup Plan -->
-                    <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 transition-transform hover:-translate-y-2">
-                        <h3 class="text-xl font-bold">Startup Plan</h3>
-                        <p class="text-slate-500 dark:text-slate-400 mb-6">For new founders</p>
-                        <p class="text-4xl font-bold mb-6">₹999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
-                        <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Company Incorporation</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>PAN/TAN Registration</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Compliance Calendar (Basic)</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Any time free customer support</li>
-                        </ul>
-                        <button class="w-full bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Get Started</button>
-                    </div>
-                    <!-- Business Plan -->
-                    <div class="scroll-animate fade-in-up relative bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border-2 border-brand-purple transition-transform hover:-translate-y-2" style="animation-delay: 0.2s;">
-                         <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Recommended</div>
-                        <h3 class="text-xl font-bold">Business Plan</h3>
-                        <p class="text-slate-500 dark:text-slate-400 mb-6">For growing businesses</p>
-                        <p class="text-4xl font-bold mb-6">₹2999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
-                        <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Everything in Startup Plan</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Udyam Registration</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Digital Signature Certificate</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Legal Consultation</li>
-                        </ul>
-                        <button class="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Get Started</button>
-                    </div>
-                    <!-- Enterprise Plan -->
-                    <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 transition-transform hover:-translate-y-2" style="animation-delay: 0.4s;">
-                        <h3 class="text-xl font-bold">Enterprise Plan</h3>
-                        <p class="text-slate-500 dark:text-slate-400 mb-6">For scaling companies</p>
-                        <p class="text-4xl font-bold mb-6">₹4999 <span class="text-base font-normal text-slate-500">/ one-time</span></p>
-                        <ul class="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Everything in Business Plan</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Trademark Registration</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>GST Registration & Compliance</li>
-                           <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Dedicated Account Manager</li>
-                        </ul>
-                        <button class="w-full bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">Get Started</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us Section -->
-        <section id="about" class="py-20 bg-slate-100 dark:bg-brand-light">
-             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Why Choose Us?</h2>
-                     <p class="text-slate-500 dark:text-slate-400 mt-2">The advantages of choosing CorporateSaathi for your business.</p>
-                </div>
-                <div class="bg-white dark:bg-brand-dark rounded-xl shadow-lg p-8 grid md:grid-cols-2 gap-8 scroll-animate fade-in-up">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
+                    <!-- Startup Registration -->
                     <div>
-                        <h3 class="font-bold text-lg mb-4 text-brand-purple">With CorporateSaathi</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10003;</span> <div><strong class="text-slate-800 dark:text-slate-200">All-in-one pricing</strong><p class="text-sm text-slate-500 dark:text-slate-400">Our package includes everything you need–no hidden charges.</p></div></li>
-                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10003;</span> <div><strong class="text-slate-800 dark:text-slate-200">Personalized assistance</strong><p class="text-sm text-slate-500 dark:text-slate-400">Our dedicated team guides you at every step.</p></div></li>
-                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10003;</span> <div><strong class="text-slate-800 dark:text-slate-200">End-to-end service</strong><p class="text-sm text-slate-500 dark:text-slate-400">From document collection to final registration, we handle it all.</p></div></li>
+                        <h4 class="font-semibold text-white mb-4">Startup Registration</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-white">Private Limited Company</a></li>
+                            <li><a href="#" class="hover:text-white">LLP</a></li>
+                            <li><a href="#" class="hover:text-white">One Person Company</a></li>
+                            <li><a href="#" class="hover:text-white">Partnership Firm</a></li>
                         </ul>
                     </div>
-                    <div class="opacity-60">
-                        <h3 class="font-bold text-lg mb-4">Others</h3>
-                         <ul class="space-y-4">
-                            <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">&#10007;</span> <div><strong class="text-slate-800 dark:text-slate-200">Pay for each task</strong><p class="text-sm text-slate-500 dark:text-slate-400">Separate charges for each task add up quickly.</p></div></li>
-                            <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">&#10007;</span> <div><strong class="text-slate-800 dark:text-slate-200">No Single Point of Contact</strong><p class="text-sm text-slate-500 dark:text-slate-400">Communicating with different people causes delays.</p></div></li>
-                            <li class="flex items-start"><span class="text-red-500 mr-2 mt-1">&#10007;</span> <div><strong class="text-slate-800 dark:text-slate-200">Limited Service Scope</strong><p class="text-sm text-slate-500 dark:text-slate-400">You may discover required extra services cost more.</p></div></li>
+                     <!-- IP Registration -->
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">IP Registration</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-white">Trademark Registration</a></li>
+                            <li><a href="#" class="hover:text-white">Copyright Registration</a></li>
+                            <li><a href="#" class="hover:text-white">Patent Registration</a></li>
+                            <li><a href="#" class="hover:text-white">Design Registration</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="mt-12 text-center">
-                    <h3 class="text-lg font-semibold mb-4">Authorization from Government Regulatory Authorities</h3>
-                    <div class="flex justify-center items-center space-x-6 flex-wrap gap-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Startup_India_logo.svg/320px-Startup_India_logo.svg.png" alt="Startup India" class="h-12 filter grayscale hover:grayscale-0 transition"/>
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Intellectual_Property_India.svg/320px-Intellectual_Property_India.svg.png" alt="IP India" class="h-14 filter grayscale hover:grayscale-0 transition"/>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ISO_9001-2015.svg/320px-ISO_9001-2015.svg.png" alt="ISO Certified" class="h-14 filter grayscale hover:grayscale-0 transition"/>
+                     <!-- Tax -->
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Goods & Services Tax</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-white">GST Registration</a></li>
+                            <li><a href="#" class="hover:text-white">GST Return Filing</a></li>
+                            <li><a href="#" class="hover:text-white">GST E-invoicing</a></li>
+                        </ul>
+                    </div>
+                     <!-- Company -->
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Company</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:text-white">About Us</a></li>
+                            <li><a href="#" class="hover:text-white">Blogs</a></li>
+                            <li><a href="#" class="hover:text-white">Careers</a></li>
+                            <li><a href="#" class="hover:text-white">Partner with Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2">
+                        <h4 class="font-semibold text-white mb-4">CorporateSaathi</h4>
+                         <p class="text-sm">Get fast, reliable, and customizable online business solutions & legal services with free expert consultation.</p>
                     </div>
                 </div>
-             </div>
-        </section>
-
-        <!-- Latest Blogs Section -->
-        <section class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="flex justify-between items-center mb-12">
-                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Latest Blogs</h2>
-                     <a href="#" class="border border-slate-300 dark:border-slate-600 rounded-full px-4 py-2 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">View All</a>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post 1 -->
-                    <div class="scroll-animate fade-in-up group">
-                        <div class="overflow-hidden rounded-xl mb-4">
-                           <img src="https://images.unsplash.com/photo-1556761175-b413da4b248a?q=80&w=2160&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
-                        </div>
-                        <p class="text-sm text-slate-500 mb-2">September 13, 2025</p>
-                        <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What is an ESOP for Private Limited Companies?</a></h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">An Employee Stock Option Plan (ESOP) in India allows employees of Pvt. Ltd. Companies to buy shares at a fixed...</p>
-                    </div>
-                     <!-- Blog Post 2 -->
-                    <div class="scroll-animate fade-in-up group" style="animation-delay: 0.2s;">
-                        <div class="overflow-hidden rounded-xl mb-4">
-                           <img src="https://images.unsplash.com/photo-1522881193457-3158c2a40771?q=80&w=2940&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
-                        </div>
-                        <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
-                        <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">How Much Does a Virtual Office Cost in India?</a></h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">In the business world, a professional address is crucial for credibility, but a traditional office comes with a huge...</p>
-                    </div>
-                     <!-- Blog Post 3 -->
-                    <div class="scroll-animate fade-in-up group" style="animation-delay: 0.4s;">
-                        <div class="overflow-hidden rounded-xl mb-4">
-                           <img src="https://images.unsplash.com/photo-1600880292210-85938c1b3f19?q=80&w=2787&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
-                        </div>
-                        <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
-                        <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What are the Fees of Registering a Private Ltd Company in India?</a></h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">For startups and entrepreneurs, understanding the costs and fees associated with registering a Private...</p>
+                <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                    <p>&copy; 2025 CorporateSaathi. All Rights Reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.229 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" clip-rule="evenodd" /></svg></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
+    </div>
 
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-brand-dark text-slate-300 pt-16 pb-8">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
-                <!-- Startup Registration -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Startup Registration</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">Private Limited Company</a></li>
-                        <li><a href="#" class="hover:text-white">LLP</a></li>
-                        <li><a href="#" class="hover:text-white">One Person Company</a></li>
-                        <li><a href="#" class="hover:text-white">Partnership Firm</a></li>
-                    </ul>
+    <!-- Login Page -->
+    <section id="login-page" class="hidden min-h-screen flex items-center justify-center p-6">
+        <div class="w-full max-w-md bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
+            <h2 class="text-2xl font-bold text-center text-slate-900 dark:text-white mb-2">Welcome Back!</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mb-8">Please login to continue.</p>
+            <form id="login-form">
+                <div class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Email address</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-brand-dark border border-slate-300 dark:border-slate-600 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-purple focus:border-brand-purple">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Password</label>
+                        <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-brand-dark border border-slate-300 dark:border-slate-600 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-purple focus:border-brand-purple">
+                    </div>
+                    <button type="submit" class="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Login</button>
                 </div>
-                 <!-- IP Registration -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">IP Registration</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">Trademark Registration</a></li>
-                        <li><a href="#" class="hover:text-white">Copyright Registration</a></li>
-                        <li><a href="#" class="hover:text-white">Patent Registration</a></li>
-                        <li><a href="#" class="hover:text-white">Design Registration</a></li>
-                    </ul>
-                </div>
-                 <!-- Tax -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Goods & Services Tax</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">GST Registration</a></li>
-                        <li><a href="#" class="hover:text-white">GST Return Filing</a></li>
-                        <li><a href="#" class="hover:text-white">GST E-invoicing</a></li>
-                    </ul>
-                </div>
-                 <!-- Company -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">About Us</a></li>
-                        <li><a href="#" class="hover:text-white">Blogs</a></li>
-                        <li><a href="#" class="hover:text-white">Careers</a></li>
-                        <li><a href="#" class="hover:text-white">Partner with Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-span-2">
-                    <h4 class="font-semibold text-white mb-4">CorporateSaathi</h4>
-                     <p class="text-sm">Get fast, reliable, and customizable online business solutions & legal services with free expert consultation.</p>
-                </div>
-            </div>
-            <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-                <p>&copy; 2025 CorporateSaathi. All Rights Reserved.</p>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-                    <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
-                    <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.229 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" clip-rule="evenodd" /></svg></a>
-                </div>
-            </div>
+            </form>
         </div>
-    </footer>
+    </section>
+
+    <!-- Details Form Page -->
+    <section id="form-page" class="hidden min-h-screen flex items-center justify-center p-6">
+        <div class="w-full max-w-2xl bg-white dark:bg-brand-light p-8 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Tell Us About Your Business</h2>
+            <p class="text-slate-500 dark:text-slate-400 mb-8">Please fill out the details below to proceed.</p>
+            <form id="details-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Full Name</label>
+                        <input type="text" id="full-name" required class="mt-1 form-input">
+                    </div>
+                    <div>
+                        <label for="mobile" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Mobile No.</label>
+                        <input type="tel" id="mobile" required class="mt-1 form-input">
+                    </div>
+                </div>
+                <div>
+                    <label for="email-id" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Email ID</label>
+                    <input type="email" id="email-id" required class="mt-1 form-input">
+                </div>
+                 <div>
+                    <label for="business-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Business Name <span class="text-slate-400">(Optional)</span></label>
+                    <input type="text" id="business-name" class="mt-1 form-input">
+                </div>
+
+                <fieldset>
+                    <legend class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Selection</legend>
+                    <div class="flex items-center space-x-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="selection-type" value="plan" class="form-radio" checked>
+                            <span class="ml-2 text-sm">Plan</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="selection-type" value="service" class="form-radio">
+                            <span class="ml-2 text-sm">Service</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div id="plan-options">
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Choose a Plan</label>
+                    <div class="space-y-2">
+                         <label class="block p-3 rounded-md border border-slate-300 dark:border-slate-600 has-[:checked]:border-brand-purple has-[:checked]:ring-1 has-[:checked]:ring-brand-purple">
+                            <input type="radio" name="plan" value="Startup Plan" class="hidden">
+                            <span class="font-semibold text-slate-800 dark:text-slate-200">Startup Plan</span>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">For new founders</p>
+                        </label>
+                         <label class="block p-3 rounded-md border border-slate-300 dark:border-slate-600 has-[:checked]:border-brand-purple has-[:checked]:ring-1 has-[:checked]:ring-brand-purple">
+                            <input type="radio" name="plan" value="Business Plan" class="hidden">
+                             <span class="font-semibold text-slate-800 dark:text-slate-200">Business Plan</span>
+                             <p class="text-sm text-slate-500 dark:text-slate-400">For growing businesses</p>
+                        </label>
+                         <label class="block p-3 rounded-md border border-slate-300 dark:border-slate-600 has-[:checked]:border-brand-purple has-[:checked]:ring-1 has-[:checked]:ring-brand-purple">
+                            <input type="radio" name="plan" value="Enterprise Plan" class="hidden">
+                             <span class="font-semibold text-slate-800 dark:text-slate-200">Enterprise Plan</span>
+                             <p class="text-sm text-slate-500 dark:text-slate-400">For scaling companies</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="service-options" class="hidden">
+                     <label for="service-search" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Search for a Service</label>
+                     <input list="service-list" id="service-search" name="service-search" class="mt-1 form-input">
+                     <datalist id="service-list">
+                        <!-- Business Registration -->
+                        <option value="Company Registration">
+                        <option value="International Business Setup">
+                        <option value="Licenses & Registrations">
+                        <option value="Web Development">
+                        <!-- Tax & Compliance -->
+                        <option value="GST and Other Indirect Tax">
+                        <option value="Changes in Pvt Ltd Company">
+                        <option value="Changes in LLP">
+                        <option value="Mandatory Annual Filings">
+                        <option value="Labour Compliance">
+                        <option value="Accounting & Tax">
+                        <option value="Convert Your Business">
+                        <option value="GST">
+                         <!-- Trademark & IP -->
+                        <option value="Trademark">
+                        <option value="Copyright">
+                        <option value="Patent">
+                        <option value="Infringement">
+                        <option value="Design Registration">
+                         <!-- Documentation -->
+                        <option value="Free Legal Documents">
+                        <option value="Business Contracts">
+                        <option value="Personal & Family">
+                        <option value="Real Estate">
+                        <option value="Notices">
+                        <option value="HR Policies">
+                     </datalist>
+                </div>
+
+                <div>
+                    <label for="state" class="block text-sm font-medium text-slate-700 dark:text-slate-300">State</label>
+                    <select id="state" name="state" required class="mt-1 form-input">
+                        <option value="" disabled selected>Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Submit</button>
+            </form>
+        </div>
+    </section>
 
     <script type="module" src="index.tsx"></script>
 </body>

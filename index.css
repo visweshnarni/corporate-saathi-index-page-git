@@ -33,21 +33,46 @@ body {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
 }
 .marquee-content {
     display: flex;
     align-items: center;
-    animation: marquee 30s linear infinite;
+    animation: marquee 40s linear infinite;
+    gap: 6rem;
 }
+.marquee-content.reverse {
+    animation-name: marquee-reverse;
+}
+
+.marquee-logo {
+    height: 3rem; /* Increased logo size */
+    max-width: 10rem;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.marquee-logo:hover {
+    transform: scale(1.1);
+}
+
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
-/* Multi-level Dropdown */
-.sub-group:hover .sub-group-hover\:opacity-100 {
-    opacity: 1;
+@keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
-.sub-group:hover .sub-group-hover\:visible {
-    visibility: visible;
+
+/* Form Styles */
+.form-input {
+    @apply mt-1 block w-full px-3 py-2 bg-white dark:bg-brand-dark border border-slate-300 dark:border-slate-600 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-purple focus:border-brand-purple;
+}
+
+.form-radio {
+    @apply h-4 w-4 text-brand-purple border-slate-300 dark:border-slate-600 bg-white dark:bg-brand-dark focus:ring-brand-purple focus:ring-offset-0 dark:focus:ring-offset-brand-light;
 }
