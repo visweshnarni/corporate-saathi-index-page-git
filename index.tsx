@@ -145,4 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContent.classList.remove('hidden');
     });
 
+    // --- Contact Form ---
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(contactForm as HTMLFormElement);
+        const data = Object.fromEntries(formData.entries());
+        console.log('Contact Form Submitted:', data);
+        alert('Thank you for your message! We will get back to you soon.');
+        (contactForm as HTMLFormElement).reset();
+    });
+
 });

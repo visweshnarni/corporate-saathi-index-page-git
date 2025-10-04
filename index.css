@@ -76,3 +76,23 @@ body {
 .form-radio {
     @apply h-4 w-4 text-brand-purple border-slate-300 dark:border-slate-600 bg-white dark:bg-brand-dark focus:ring-brand-purple focus:ring-offset-0 dark:focus:ring-offset-brand-light;
 }
+
+.contact-form-input {
+    @apply w-full bg-transparent border-0 border-b border-slate-300 dark:border-slate-600 rounded-none py-3 px-1 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-0 focus:border-brand-purple transition-colors;
+}
+
+.contact-form-input:-webkit-autofill,
+.contact-form-input:-webkit-autofill:hover,
+.contact-form-input:-webkit-autofill:focus,
+.contact-form-input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important; /* Light mode */
+    -webkit-text-fill-color: #0f172a !important;
+}
+
+.dark .contact-form-input:-webkit-autofill,
+.dark .contact-form-input:-webkit-autofill:hover,
+.dark .contact-form-input:-webkit-autofill:focus,
+.dark .contact-form-input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0f172a inset !important; /* Dark mode */
+    -webkit-text-fill-color: #e2e8f0 !important;
+}
