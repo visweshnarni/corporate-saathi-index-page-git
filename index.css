@@ -1,5 +1,5 @@
 :root {
-  --hero-bg-light: linear-gradient(135deg, #6366f1 0%, #3730a3 100%);
+  --hero-bg-light: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
   --hero-bg-dark: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
 
@@ -95,4 +95,49 @@ body {
 .dark .contact-form-input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #0f172a inset !important; /* Dark mode bg-brand-dark */
     -webkit-text-fill-color: #e2e8f0 !important;
+}
+
+/* Process Section */
+.process-step {
+  cursor: pointer;
+}
+.process-step .process-step-circle {
+  border: 2px solid #cbd5e1; /* slate-300 */
+  background-color: white;
+  color: #475569; /* slate-600 */
+  transition: all 0.4s ease-in-out;
+}
+.dark .process-step .process-step-circle {
+  border-color: #475569; /* slate-600 */
+  background-color: #1e293b; /* brand-light */
+}
+.process-step.active .process-step-circle {
+  background-color: #8B5CF6; /* brand-purple */
+  border-color: #8B5CF6;
+  color: white;
+  transform: scale(1.1);
+}
+
+.process-line-progress {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+.process-line-progress.active {
+  transform: scaleX(1);
+}
+
+.process-card {
+  cursor: pointer;
+  transition: transform 0.4s ease-out;
+}
+.process-card .process-card-content {
+    transition: border-color 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+.process-card.active {
+  transform: scale(1.05);
+}
+.process-card.active .process-card-content {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.2);
 }

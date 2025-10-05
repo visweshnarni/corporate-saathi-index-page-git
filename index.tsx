@@ -209,4 +209,102 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Process Section Animation ---
+    const processSection = document.getElementById('process');
+    if (processSection) {
+        const steps = Array.from(processSection.querySelectorAll('.process-step')) as HTMLElement[];
+        const lines = Array.from(processSection.querySelectorAll('.process-line-progress')) as HTMLElement[];
+        const cards = Array.from(processSection.querySelectorAll('.process-card')) as HTMLElement[];
+
+        let currentStep = -1;
+        let animationInterval: number | null = null;
+        let isPausedByUser = false;
+        const animationSpeed = 3000; // 3 seconds per step
+
+        const setActiveStep = (index: number) => {
+            // Reset all active states first
+            steps.forEach(s => s.classList.remove('active'));
+            lines.forEach(l => l.classList.remove('active'));
+            cards.forEach(c => c.classList.remove('active'));
+            
+            if (index >= 0 && index < steps.length) {
+                // Activate the specific card for the current step
+                cards[index].classList.add('active');
+
+                // Activate steps cumulatively
+                for (let i = 0; i <= index; i++) {
+                    if (steps[i]) {
+                        steps[i].classList.add('active');
+                    }
+                }
+
+                // Activate lines cumulatively
+                for (let i = 0; i < index; i++) {
+                    if (lines[i]) {
+                        lines[i].classList.add('active');
+                    }
+                }
+            }
+            currentStep = index;
+        };
+        
+        const advanceStep = () => {
+            if (isPausedByUser) return;
+            let nextStep = currentStep + 1;
+            if (nextStep >= steps.length) {
+                nextStep = 0; // Loop back to the beginning
+            }
+            setActiveStep(nextStep);
+        };
+
+        const startAnimation = () => {
+            if (animationInterval) clearInterval(animationInterval);
+            if (isPausedByUser) return;
+            // Run first step immediately, then start interval
+            advanceStep();
+            animationInterval = window.setInterval(advanceStep, animationSpeed);
+        };
+
+        const stopAnimation = () => {
+            if (animationInterval) {
+                clearInterval(animationInterval);
+                animationInterval = null;
+            }
+        };
+        
+        // Click handlers to pause and manually select a step
+        [...steps, ...cards].forEach((element, index) => {
+            // Map card index back to its corresponding step index
+            const stepIndex = index % steps.length;
+            
+            element.addEventListener('click', () => {
+                isPausedByUser = true;
+                stopAnimation();
+                setActiveStep(stepIndex);
+            });
+        });
+
+        // Resume animation on mouse leave if it was paused by user
+        processSection.addEventListener('mouseleave', () => {
+            if (isPausedByUser) {
+                isPausedByUser = false;
+                startAnimation();
+            }
+        });
+
+        // Observer to play/pause animation based on section visibility
+        const processObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                if (!animationInterval && !isPausedByUser) {
+                   startAnimation();
+                }
+            } else {
+                stopAnimation();
+            }
+        }, {
+            threshold: 0.4 
+        });
+        
+        processObserver.observe(processSection);
+    }
 });
