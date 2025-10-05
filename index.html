@@ -40,21 +40,21 @@
                 <a href="#plans" class="hover:text-brand-purple transition-colors">Plans</a>
                 <a href="#" class="hover:text-brand-purple transition-colors">Process</a>
                  <!-- Schemes Dropdown -->
-                <div class="relative group">
-                    <button class="hover:text-brand-purple transition-colors flex items-center">
+                <div class="relative">
+                    <button id="schemes-menu-btn" class="hover:text-brand-purple transition-colors flex items-center">
                         Schemes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible">
+                    <div id="schemes-menu" class="absolute left-0 mt-2 w-48 bg-white dark:bg-brand-light rounded-md shadow-lg transition-opacity duration-300 hidden">
                         <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Student Founder</a>
                         <a href="#" class="block px-4 py-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Women Founder</a>
                     </div>
                 </div>
                  <!-- Services Mega Menu -->
-                 <div class="relative group">
-                    <button class="hover:text-brand-purple transition-colors flex items-center">
+                 <div class="relative">
+                    <button id="services-menu-btn" class="hover:text-brand-purple transition-colors flex items-center">
                         Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-brand-light rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible w-max">
+                    <div id="services-menu" class="absolute left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-brand-light rounded-md shadow-lg transition-opacity duration-300 hidden w-max">
                         <div class="p-4 grid grid-cols-4 gap-x-8">
                             <!-- Column 1: Business Registration -->
                             <div class="space-y-2">
@@ -173,84 +173,85 @@
                 </div>
             </section>
     
-            <!-- Trusted By Section -->
-            <section class="py-20 bg-slate-100 dark:bg-brand-light overflow-hidden">
-                <div class="container mx-auto px-6 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16 scroll-animate fade-in-up">Trusted by The Best</h2>
-                </div>
-    
-                <!-- Trusted Partners Marquee -->
-                <div class="scroll-animate fade-in-up" style="animation-delay: 0.2s;">
-                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Our Trusted Partners</h3>
-                    <div class="marquee">
-                        <div class="marquee-content">
-                            <!-- Original Logos -->
-                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
-                            <!-- Duplicate Logos for seamless scroll -->
-                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Featured On Marquee -->
-                <div class="mt-20 scroll-animate fade-in-up" style="animation-delay: 0.4s;">
-                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Featured On</h3>
-                    <div class="marquee">
-                        <div class="marquee-content reverse">
-                            <!-- Original Logos -->
-                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
-                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
-                             <!-- Duplicate Logos for seamless scroll -->
-                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
-                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
             <!-- About Us Section -->
-            <section id="about" class="py-20">
+            <section id="about" class="pt-20 pb-10">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-16">
                          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white scroll-animate fade-in-up">About CorporateSaathi</h2>
-                         <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-3xl mx-auto scroll-animate fade-in-up" style="animation-delay: 0.2s;">We are a team of dedicated professionals committed to simplifying the legal complexities of starting and running a business in India. Our mission is to empower entrepreneurs by providing accessible, affordable, and expert-driven solutions, allowing them to focus on what they do best: building great businesses.</p>
+                         <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-3xl mx-auto scroll-animate fade-in-up" style="animation-delay: 0.2s;">CorporateSaathi is your all-in-one partner for corporate, legal, and business compliance services. We help entrepreneurs, startups, and enterprises manage registrations, licenses, tax filings, and government schemes with ease. Our mission is to simplify business processes so you can focus on what matters most growth and innovation. With a team of experts and a tech-driven approach, we’re transforming how businesses handle compliance making it transparent, accessible, and stress-free.</p>
                     </div>
 
-                    <div class="text-center mb-16">
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <!-- Vision Card -->
+                        <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 h-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-lg">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400">To become India’s most trusted digital platform for corporate and legal services, empowering every business from startup to enterprise to grow without barriers.</p>
+                        </div>
+                        <!-- Mission Card -->
+                        <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 h-full" style="animation-delay: 0.2s;">
+                           <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-lg">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
+                            </div>
+                            <ul class="space-y-3 text-slate-500 dark:text-slate-400">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-brand-purple mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>To simplify legal and corporate processes through technology and expert guidance.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-brand-purple mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>To help businesses stay compliant and focus on innovation.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-brand-purple mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>To build long-term relationships based on trust, transparency, and efficiency.</span></li>
+                            </ul>
+                        </div>
+                        <!-- Core Values Card -->
+                        <div class="scroll-animate fade-in-up bg-white dark:bg-brand-light p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 h-full" style="animation-delay: 0.4s;">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-lg">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Our Core Values</h3>
+                            </div>
+                            <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-brand-purple mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m0-4l-4 4-4-4"></path></svg>
+                                    <div><strong>Integrity:</strong> We uphold honesty and transparency in every service we provide.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-brand-purple mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    <div><strong>Reliability:</strong> We deliver accurate, timely, and dependable support to our clients.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-brand-purple mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                                    <div><strong>Innovation:</strong> We use technology to make business management smarter and simpler.</div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-brand-purple mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                    <div><strong>Customer-Centricity:</strong> Our clients’ growth and satisfaction are at the heart of everything we do.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-20">
                         <h3 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-12 scroll-animate fade-in-up">Meet the Team</h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <div class="flex flex-wrap justify-center gap-10">
                             <!-- Team Member 1 -->
-                            <div class="text-center scroll-animate fade-in-up">
+                            <div class="text-center scroll-animate fade-in-up w-56">
                                 <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Team member photo">
                                 <h4 class="text-xl font-bold">John Doe</h4>
                                 <p class="text-brand-purple">CEO & Co-Founder</p>
                             </div>
                             <!-- Team Member 2 -->
-                            <div class="text-center scroll-animate fade-in-up" style="animation-delay: 0.2s;">
+                            <div class="text-center scroll-animate fade-in-up w-56" style="animation-delay: 0.2s;">
                                 <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg" src="https://randomuser.me/api/portraits/women/12.jpg" alt="Team member photo">
                                 <h4 class="text-xl font-bold">Jane Smith</h4>
                                 <p class="text-brand-purple">COO & Co-Founder</p>
                             </div>
                             <!-- Team Member 3 -->
-                            <div class="text-center scroll-animate fade-in-up" style="animation-delay: 0.4s;">
+                            <div class="text-center scroll-animate fade-in-up w-56" style="animation-delay: 0.4s;">
                                 <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg" src="https://randomuser.me/api/portraits/men/14.jpg" alt="Team member photo">
                                 <h4 class="text-xl font-bold">Sam Wilson</h4>
                                 <p class="text-brand-purple">Head of Legal</p>
@@ -261,7 +262,7 @@
             </section>
     
             <!-- Plans Section -->
-            <section id="plans" class="py-20">
+            <section id="plans" class="pt-10 pb-20">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Pick your perfect plan</h2>
@@ -401,33 +402,33 @@
                     <!-- Authorizations Section -->
                     <div class="mt-16 text-center scroll-animate fade-in-up">
                         <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Official Authorizations & Recognitions</h3>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-6 place-items-center">
+                        <div class="flex flex-wrap items-start justify-center gap-y-10 gap-x-6">
                             <div class="text-center">
-                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                <div class="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/ISO_9001-2015.svg" alt="ISO Certified" class="h-auto w-24 object-contain"/>
                                 </div>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">ISO 9001:2015</p>
                             </div>
                             <div class="text-center">
-                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                <div class="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
                                     <img src="https://banner2.cleanpng.com/20180810/lpl/500460e06e895fc9fc17e8ad3c05413e.webp" alt="FSSAI" class="h-auto w-24 object-contain"/>
                                 </div>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">FSSAI Licensed</p>
                             </div>
                             <div class="text-center">
-                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                <div class="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/MSME_logo_%28colour%29.svg" alt="MSME" class="h-auto w-20 object-contain"/>
                                 </div>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">MSME Registered</p>
                             </div>
                             <div class="text-center">
-                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                <div class="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
                                     <img src="https://ipr.icegate.gov.in/IPR/html5/assets/img/demo/ipr.png" alt="Intellectual Property India" class="h-auto w-24 object-contain"/>
                                 </div>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">IP India Partner</p>
                             </div>
                             <div class="text-center">
-                                <div class="bg-white p-3 rounded-full w-28 h-28 md:w-32 md:h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                <div class="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
                                     <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" class="h-auto w-24 object-contain"/>
                                 </div>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">Startup India Recognized</p>
@@ -435,6 +436,59 @@
                         </div>
                     </div>
                  </div>
+            </section>
+
+            <!-- Trusted By Section -->
+            <section class="py-20 bg-slate-50 dark:bg-brand-dark overflow-hidden">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16 scroll-animate fade-in-up">Trusted by The Best</h2>
+                </div>
+    
+                <!-- Trusted Partners Marquee -->
+                <div class="scroll-animate fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Our Trusted Partners</h3>
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <!-- Original Logos -->
+                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
+                            <!-- Duplicate Logos for seamless scroll -->
+                            <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/slack.com" alt="Slack" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/notion.so" alt="Notion" class="marquee-logo"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Featured On Marquee -->
+                <div class="mt-20 scroll-animate fade-in-up" style="animation-delay: 0.4s;">
+                    <h3 class="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Featured On</h3>
+                    <div class="marquee">
+                        <div class="marquee-content reverse">
+                            <!-- Original Logos -->
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
+                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
+                             <!-- Duplicate Logos for seamless scroll -->
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" class="marquee-logo" />
+                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" class="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" class="marquee-logo"/>
+                        </div>
+                    </div>
+                </div>
             </section>
     
             <!-- Latest Blogs Section -->
@@ -448,7 +502,7 @@
                         <!-- Blog Post 1 -->
                         <div class="scroll-animate fade-in-up group">
                             <div class="overflow-hidden rounded-xl mb-4">
-                               <img src="https://images.unsplash.com/photo-1556761175-b413da4b248a?q=80&w=2160&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                               <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop" alt="Professionals in a business meeting discussing company equity" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
                             </div>
                             <p class="text-sm text-slate-500 mb-2">September 13, 2025</p>
                             <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What is an ESOP for Private Limited Companies?</a></h3>
@@ -457,7 +511,7 @@
                          <!-- Blog Post 2 -->
                         <div class="scroll-animate fade-in-up group" style="animation-delay: 0.2s;">
                             <div class="overflow-hidden rounded-xl mb-4">
-                               <img src="https://images.unsplash.com/photo-1522881193457-3158c2a40771?q=80&w=2940&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                               <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2940&auto=format&fit=crop" alt="Modern desk setup representing a virtual office" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
                             </div>
                             <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
                             <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">How Much Does a Virtual Office Cost in India?</a></h3>
@@ -466,7 +520,7 @@
                          <!-- Blog Post 3 -->
                         <div class="scroll-animate fade-in-up group" style="animation-delay: 0.4s;">
                             <div class="overflow-hidden rounded-xl mb-4">
-                               <img src="https://images.unsplash.com/photo-1600880292210-85938c1b3f19?q=80&w=2787&auto=format&fit=crop" alt="Blog post image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+                               <img src="https://images.unsplash.com/photo-1560518883-ce09059ee41F?q=80&w=2874&auto=format&fit=crop" alt="People signing official documents for company registration" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
                             </div>
                             <p class="text-sm text-slate-500 mb-2">September 12, 2025</p>
                             <h3 class="font-bold text-lg mb-2"><a href="#" class="hover:text-brand-purple">What are the Fees of Registering a Private Ltd Company in India?</a></h3>
@@ -483,61 +537,61 @@
                         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Get In Touch</h2>
                         <p class="text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto">Have a question or need a custom quote? We'd love to hear from you. Reach out and we'll get back to you shortly.</p>
                     </div>
-                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-white dark:bg-brand-dark p-8 rounded-2xl shadow-xl">
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 rounded-2xl shadow-xl overflow-hidden">
                         <!-- Contact Info -->
-                        <div class="space-y-8">
+                        <div class="bg-brand-dark p-8 space-y-8">
                              <div>
-                                <h3 class="text-xl font-bold mb-4">Contact Information</h3>
-                                <p class="text-slate-600 dark:text-slate-400">Fill up the form and our Team will get back to you within 24 hours.</p>
+                                <h3 class="text-2xl font-bold text-white mb-4">Contact Information</h3>
+                                <p class="text-slate-300">Fill up the form and our Team will get back to you within 24 hours.</p>
                              </div>
                              <div class="space-y-6">
                                 <div class="flex items-start space-x-4">
-                                    <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-full">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <div class="bg-brand-purple/20 text-brand-purple-light p-3 rounded-full">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-slate-800 dark:text-white">Phone</h4>
-                                        <a href="tel:+911234567890" class="text-slate-600 dark:text-slate-400 hover:text-brand-purple">+91 123 456 7890</a>
+                                        <h4 class="font-semibold text-white">Phone</h4>
+                                        <a href="tel:+911234567890" class="text-slate-300 hover:text-white transition-colors">+91 123 456 7890</a>
                                     </div>
                                 </div>
                                 <div class="flex items-start space-x-4">
-                                     <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-full">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                     <div class="bg-brand-purple/20 text-brand-purple-light p-3 rounded-full">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-slate-800 dark:text-white">Email</h4>
-                                        <a href="mailto:support@corporatesaathi.com" class="text-slate-600 dark:text-slate-400 hover:text-brand-purple">support@corporatesaathi.com</a>
+                                        <h4 class="font-semibold text-white">Email</h4>
+                                        <a href="mailto:support@corporatesaathi.com" class="text-slate-300 hover:text-white transition-colors">support@corporatesaathi.com</a>
                                     </div>
                                 </div>
                                  <div class="flex items-start space-x-4">
-                                     <div class="bg-brand-purple/10 text-brand-purple p-3 rounded-full">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                     <div class="bg-brand-purple/20 text-brand-purple-light p-3 rounded-full">
+                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-slate-800 dark:text-white">Address</h4>
-                                        <p class="text-slate-600 dark:text-slate-400">123 Business Avenue, Startup City, India</p>
+                                        <h4 class="font-semibold text-white">Address</h4>
+                                        <p class="text-slate-300">123 Business Avenue, Startup City, India</p>
                                     </div>
                                 </div>
                              </div>
                         </div>
                         <!-- Contact Form -->
-                        <div>
+                        <div class="bg-white dark:bg-brand-dark p-8">
                             <form id="contact-form" class="space-y-8">
                                 <div>
-                                    <label for="contact-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 sr-only">Name</label>
-                                    <input type="text" id="contact-name" name="name" required placeholder="Your Name" class="contact-form-input">
+                                    <label for="contact-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Your Name</label>
+                                    <input type="text" id="contact-name" name="name" required placeholder="John Doe" class="contact-form-input">
                                 </div>
                                 <div>
-                                    <label for="contact-email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 sr-only">Email</label>
-                                    <input type="email" id="contact-email" name="email" required placeholder="Your Email" class="contact-form-input">
+                                    <label for="contact-email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Your Email</label>
+                                    <input type="email" id="contact-email" name="email" required placeholder="john.doe@example.com" class="contact-form-input">
                                 </div>
                                  <div>
-                                    <label for="contact-subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 sr-only">Subject</label>
-                                    <input type="text" id="contact-subject" name="subject" required placeholder="Subject" class="contact-form-input">
+                                    <label for="contact-subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Subject</label>
+                                    <input type="text" id="contact-subject" name="subject" required placeholder="Regarding startup registration" class="contact-form-input">
                                 </div>
                                 <div>
-                                    <label for="contact-message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 sr-only">Message</label>
-                                    <textarea id="contact-message" name="message" required rows="5" placeholder="Your Message" class="contact-form-input"></textarea>
+                                    <label for="contact-message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
+                                    <textarea id="contact-message" name="message" required rows="3" placeholder="I'd like to inquire about..." class="contact-form-input"></textarea>
                                 </div>
                                 <button type="submit" class="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Send Message</button>
                             </form>
@@ -551,57 +605,204 @@
         <!-- Footer -->
         <footer id="footer" class="bg-brand-dark text-slate-300 pt-16 pb-8">
             <div class="container mx-auto px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
+                <!-- Services Grid -->
+                <div class="space-y-10">
                     <!-- Startup Registration -->
-                    <div>
-                        <h4 class="font-semibold text-white mb-4">Startup Registration</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-white">Private Limited Company</a></li>
-                            <li><a href="#" class="hover:text-white">LLP</a></li>
-                            <li><a href="#" class="hover:text-white">One Person Company</a></li>
-                            <li><a href="#" class="hover:text-white">Partnership Firm</a></li>
-                        </ul>
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">Startup Registration</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Private Limited Company</a>
+                            <a href="#" class="hover:text-white">Public Limited Company</a>
+                            <a href="#" class="hover:text-white">Limited Liability Partnership</a>
+                            <a href="#" class="hover:text-white">One Person Company</a>
+                            <a href="#" class="hover:text-white">Partnership Firm</a>
+                            <a href="#" class="hover:text-white">Section 8 Company</a>
+                            <a href="#" class="hover:text-white">Trust Registration</a>
+                            <a href="#" class="hover:text-white">Producer Company</a>
+                            <a href="#" class="hover:text-white">Indian Subsidiary</a>
+                            <a href="#" class="hover:text-white">Proprietorship</a>
+                            <a href="#" class="hover:text-white">UAE Company</a>
+                            <a href="#" class="hover:text-white">Singapore Company</a>
+                        </div>
                     </div>
-                     <!-- IP Registration -->
-                    <div>
-                        <h4 class="font-semibold text-white mb-4">IP Registration</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-white">Trademark Registration</a></li>
-                            <li><a href="#" class="hover:text-white">Copyright Registration</a></li>
-                            <li><a href="#" class="hover:text-white">Patent Registration</a></li>
-                            <li><a href="#" class="hover:text-white">Design Registration</a></li>
-                        </ul>
+                    <!-- Intellectual Property (IP) Registration -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">Intellectual Property (IP) Registration</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Trademark Registration</a>
+                            <a href="#" class="hover:text-white">Trademark Objection</a>
+                            <a href="#" class="hover:text-white">Trademark Certificate</a>
+                            <a href="#" class="hover:text-white">Trademark Transfer</a>
+                            <a href="#" class="hover:text-white">Trademark Renewal</a>
+                            <a href="#" class="hover:text-white">International Trademark</a>
+                            <a href="#" class="hover:text-white">Logo Designing</a>
+                            <a href="#" class="hover:text-white">Design Registration</a>
+                            <a href="#" class="hover:text-white">Copyright Registration</a>
+                            <a href="#" class="hover:text-white">Copyright Objection</a>
+                            <a href="#" class="hover:text-white">Patent Registration</a>
+                            <a href="#" class="hover:text-white">IP Notice</a>
+                        </div>
                     </div>
-                     <!-- Tax -->
+                    <!-- Goods & Services Tax -->
                     <div>
-                        <h4 class="font-semibold text-white mb-4">Goods & Services Tax</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-white">GST Registration</a></li>
-                            <li><a href="#" class="hover:text-white">GST Return Filing</a></li>
-                            <li><a href="#" class="hover:text-white">GST E-invoicing</a></li>
-                        </ul>
-                    </div>
-                     <!-- Company -->
-                    <div>
-                        <h4 class="font-semibold text-white mb-4">Company</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:text-white">About Us</a></li>
-                            <li><a href="#" class="hover:text-white">Blogs</a></li>
-                            <li><a href="#" class="hover:text-white">Careers</a></li>
-                            <li><a href="#" class="hover:text-white">Partner with Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-span-2">
-                        <h4 class="font-semibold text-white mb-4">CorporateSaathi</h4>
-                         <p class="text-sm">Get fast, reliable, and customizable online business solutions & legal services with free expert consultation.</p>
+                        <h4 class="text-xl font-semibold text-white mb-6">Goods & Services Tax</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">GST Registration</a>
+                            <a href="#" class="hover:text-white">GST Return Filing</a>
+                            <a href="#" class="hover:text-white">GST E-Invoicing Software</a>
+                            <a href="#" class="hover:text-white">GST Notice</a>
+                            <a href="#" class="hover:text-white">Income Tax E-Filing</a>
+                            <a href="#" class="hover:text-white">Business Tax Filing</a>
+                            <a href="#" class="hover:text-white">ITR Return Filing</a>
+                            <a href="#" class="hover:text-white">Income Tax Notice</a>
+                        </div>
                     </div>
                 </div>
-                <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-                    <p>&copy; 2025 CorporateSaathi. All Rights Reserved.</p>
-                    <div class="flex space-x-4 mt-4 md:mt-0">
-                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
-                        <a href="#" class="hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.229 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" clip-rule="evenodd" /></svg></a>
+
+                <!-- Hidden links container -->
+                <div id="more-footer-links" class="hidden mt-10 space-y-10">
+                    <!-- License Registrations -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">License Registrations</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Startup India Registration</a>
+                            <a href="#" class="hover:text-white">Udyam Registration</a>
+                            <a href="#" class="hover:text-white">FSSAI Registration</a>
+                            <a href="#" class="hover:text-white">FSSAI License</a>
+                            <a href="#" class="hover:text-white">Import Export Code</a>
+                            <a href="#" class="hover:text-white">Legal Entity Identifier Code</a>
+                            <a href="#" class="hover:text-white">ISO Registration</a>
+                            <a href="#" class="hover:text-white">Digital Signature Certificate</a>
+                            <a href="#" class="hover:text-white">BIS Registration</a>
+                            <a href="#" class="hover:text-white">Barcode Registration</a>
+                            <a href="#" class="hover:text-white">Trade License</a>
+                            <a href="#" class="hover:text-white">Drug License</a>
+                            <a href="#" class="hover:text-white">ICEGATE Registration</a>
+                            <a href="#" class="hover:text-white">PF Registration</a>
+                            <a href="#" class="hover:text-white">ESI Registration</a>
+                            <a href="#" class="hover:text-white">RCMC Registration</a>
+                            <a href="#" class="hover:text-white">12A and 80G Registration</a>
+                            <a href="#" class="hover:text-white">Certificate of Incumbency</a>
+                            <a href="#" class="hover:text-white">Fire License</a>
+                            <a href="#" class="hover:text-white">Darpan Registration</a>
+                        </div>
+                    </div>
+                    <!-- IPR -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">IPR</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Copyright registration</a>
+                            <a href="#" class="hover:text-white">Patent Registration</a>
+                            <a href="#" class="hover:text-white">Trademark Rectification</a>
+                            <a href="#" class="hover:text-white">Trademark Objection</a>
+                            <a href="#" class="hover:text-white">Trademark Registration</a>
+                            <a href="#" class="hover:text-white">Trademark Renewal</a>
+                            <a href="#" class="hover:text-white">International Trademark Registration</a>
+                        </div>
+                    </div>
+                    <!-- TAXATION -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">TAXATION</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Income Tax Return Filing</a>
+                            <a href="#" class="hover:text-white">TDS Return filing</a>
+                            <a href="#" class="hover:text-white">GST Registration</a>
+                            <a href="#" class="hover:text-white">GSTR-9 Filing</a>
+                            <a href="#" class="hover:text-white">GST Return Filing</a>
+                            <a href="#" class="hover:text-white">PF Return Filing</a>
+                        </div>
+                    </div>
+                    <!-- ENVIRONMENTAL -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">ENVIRONMENTAL</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">EPR Registration</a>
+                            <a href="#" class="hover:text-white">Environmental Auditing</a>
+                            <a href="#" class="hover:text-white">Environmental Clearance</a>
+                            <a href="#" class="hover:text-white">Consent to Establish</a>
+                        </div>
+                    </div>
+                    <!-- MCA Services -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">MCA Services</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Company Compliance</a>
+                            <a href="#" class="hover:text-white">LLP Compliance</a>
+                            <a href="#" class="hover:text-white">OPC Compliance</a>
+                            <a href="#" class="hover:text-white">Name Change - Company</a>
+                            <a href="#" class="hover:text-white">Registered Office Change</a>
+                            <a href="#" class="hover:text-white">DIN EKYC Filing</a>
+                            <a href="#" class="hover:text-white">DIN Reactivation</a>
+                            <a href="#" class="hover:text-white">Director Change</a>
+                            <a href="#" class="hover:text-white">MOA Amendment</a>
+                            <a href="#" class="hover:text-white">AOA Amendment</a>
+                            <a href="#" class="hover:text-white">Share Transfer</a>
+                            <a href="#" class="hover:text-white">Capital Increase</a>
+                        </div>
+                    </div>
+                    <!-- AGREEMENT AND CONTRACTS -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">AGREEMENT AND CONTRACTS</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Memorandum of Understanding Mou</a>
+                            <a href="#" class="hover:text-white">Joint Venture Agreement</a>
+                        </div>
+                    </div>
+                    <!-- REGULATORY -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">REGULATORY</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">NBFC Registration</a>
+                            <a href="#" class="hover:text-white">Payment Bank License</a>
+                            <a href="#" class="hover:text-white">NBFC Compliance</a>
+                        </div>
+                    </div>
+                    <!-- RESOURCES -->
+                    <div class="border-b border-slate-700 pb-10">
+                        <h4 class="text-xl font-semibold text-white mb-6">RESOURCES</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">NIC Code</a>
+                            <a href="#" class="hover:text-white">Company Name Check</a>
+                        </div>
+                    </div>
+                    <!-- CONSULTATION -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-6">CONSULTATION</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-4 text-sm">
+                            <a href="#" class="hover:text-white">Consumer Complaint</a>
+                            <a href="#" class="hover:text-white">Online Chartered Accountant Services</a>
+                            <a href="#" class="hover:text-white">Startup Planning</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- See More/Less Button -->
+                <div class="text-center mt-12">
+                    <button id="see-more-btn" class="border border-slate-500 rounded-full px-8 py-2 text-sm font-semibold hover:bg-slate-700 hover:border-slate-700 transition-colors">See More</button>
+                </div>
+
+                <div class="border-t border-slate-700 pt-6 mt-12">
+                    <div class="flex flex-col sm:flex-row justify-center items-center text-center space-y-4 sm:space-y-0 sm:space-x-8 mb-6">
+                        <a href="#" class="hover:text-white text-sm">About Us</a>
+                        <a href="#" class="hover:text-white text-sm">Our Product</a>
+                        <a href="#" class="hover:text-white text-sm">News</a>
+                        <a href="#" class="hover:text-white text-sm">Blogs</a>
+                        <a href="#" class="hover:text-white text-sm">Careers</a>
+                        <a href="#" class="hover:text-white text-sm">Partner with Us</a>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-700 pt-8 mt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+                     <p class="order-2 md:order-1 mt-4 md:mt-0">&copy; 2025 corporatesaathi</p>
+                     <div class="order-1 md:order-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="font-semibold">FOLLOW US ON SOCIAL MEDIA:</span>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-brand-purple transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664 4.771 4.919-4.919 1.266-.058 1.644.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667 0 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-brand-purple transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-brand-purple transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-brand-purple transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.506 2.506 0 0 1-1.768 1.768C18.254 19 12 19 12 19s-6.255 0-7.814-.418a2.506 2.506 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.418-4.814a2.506 2.506 0 0 1 1.768-1.768C5.745 5 12 5 12 5s6.255 0 7.812.418zM9.5 15.5l7-3.5-7-3.5v7z" clip-rule="evenodd" /></svg></a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-brand-purple transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.336 8.905H4.002v-8.59h2.671v8.59zM17.638 2H6.362A4.362 4.362 0 002 6.362v11.276A4.362 4.362 0 006.362 22h11.276A4.362 4.362 0 0022 17.638V6.362A4.362 4.362 0 0017.638 2z" clip-rule="evenodd" /></svg></a>
+                        </div>
                     </div>
                 </div>
             </div>

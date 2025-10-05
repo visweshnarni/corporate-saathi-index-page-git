@@ -42,6 +42,44 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('hidden');
     });
 
+    // --- Desktop Dropdown Menus ---
+    const schemesMenuBtn = document.getElementById('schemes-menu-btn');
+    const schemesMenu = document.getElementById('schemes-menu');
+    const servicesMenuBtn = document.getElementById('services-menu-btn');
+    const servicesMenu = document.getElementById('services-menu');
+
+    const dropdowns = [
+        { btn: schemesMenuBtn, menu: schemesMenu },
+        { btn: servicesMenuBtn, menu: servicesMenu }
+    ];
+
+    dropdowns.forEach(dropdown => {
+        if (dropdown.btn && dropdown.menu) {
+            dropdown.btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Hide other dropdowns
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown.menu !== dropdown.menu) {
+                        otherDropdown.menu.classList.add('hidden');
+                    }
+                });
+                // Toggle current dropdown
+                dropdown.menu.classList.toggle('hidden');
+            });
+        }
+    });
+
+    // Close dropdowns when clicking outside
+    window.addEventListener('click', (e) => {
+        dropdowns.forEach(dropdown => {
+            if (dropdown.btn && dropdown.menu && !dropdown.menu.classList.contains('hidden')) {
+                 if (!dropdown.btn.contains(e.target as Node) && !dropdown.menu.contains(e.target as Node)) {
+                    dropdown.menu.classList.add('hidden');
+                 }
+            }
+        });
+    });
+
     // --- Header Shadow on Scroll ---
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
@@ -155,5 +193,20 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Thank you for your message! We will get back to you soon.');
         (contactForm as HTMLFormElement).reset();
     });
+
+    // --- Footer See More Toggle ---
+    const seeMoreBtn = document.getElementById('see-more-btn');
+    const moreFooterLinks = document.getElementById('more-footer-links');
+
+    if (seeMoreBtn && moreFooterLinks) {
+        seeMoreBtn.addEventListener('click', () => {
+            const isHidden = moreFooterLinks.classList.toggle('hidden');
+            if (isHidden) {
+                seeMoreBtn.textContent = 'See More';
+            } else {
+                seeMoreBtn.textContent = 'See Less';
+            }
+        });
+    }
 
 });
