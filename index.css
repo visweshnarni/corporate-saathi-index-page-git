@@ -77,24 +77,68 @@ body {
     @apply h-4 w-4 text-brand-purple border-slate-300 dark:border-slate-600 bg-white dark:bg-brand-dark focus:ring-brand-purple focus:ring-offset-0 dark:focus:ring-offset-brand-light;
 }
 
+/* Refined Styling for smaller, rounded-corner inputs */
 .contact-form-input {
-    @apply w-full bg-transparent border-0 border-b-2 border-slate-300 dark:border-slate-600 rounded-none py-3 px-1 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-0 focus:border-brand-purple transition-colors;
+    /* --- Base Styles (for Light Mode) --- */
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    
+    /* Key Light Mode Changes: */
+    color: #495057; /* Dark text for readability */
+    background-color: #f8f9fa; /* Very light grey/off-white background */
+    border: 1px solid #ced4da; /* Light, subtle border */
+    
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Focus state for better UX in Light Mode */
+.contact-form-input:focus {
+    color: #495057;
+    background-color: #ffffff; /* White background on focus */
+    border-color: #8b5cf6; /* Brand purple on focus */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.4); /* Purple glow on focus */
+}
+
+/* --- Dark Mode Styles (Activated by .dark prefix) --- */
+/* These styles will override the light mode ones when dark mode is active */
+.dark .contact-form-input {
+    background-color: #3f4258; /* Dark grey background */
+    border-color: #4a4d64;
+    color: #e0e0e0; /* Light text */
+}
+
+.dark .contact-form-input:focus {
+    background-color: #33364c;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.4);
+}
+
+/* Ensure the textarea matches the input fields' styling and default height */
+textarea.contact-form-input {
+    min-height: calc(1.5em + 1.5rem + 2px); 
+    line-height: 1.5;
 }
 
 .contact-form-input:-webkit-autofill,
 .contact-form-input:-webkit-autofill:hover,
 .contact-form-input:-webkit-autofill:focus,
 .contact-form-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important; /* Light mode bg-white */
-    -webkit-text-fill-color: #0f172a !important;
+    -webkit-box-shadow: 0 0 0 30px #f8f9fa inset !important; /* Light mode bg */
+    -webkit-text-fill-color: #495057 !important;
 }
 
 .dark .contact-form-input:-webkit-autofill,
 .dark .contact-form-input:-webkit-autofill:hover,
 .dark .contact-form-input:-webkit-autofill:focus,
 .dark .contact-form-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #0f172a inset !important; /* Dark mode bg-brand-dark */
-    -webkit-text-fill-color: #e2e8f0 !important;
+    -webkit-box-shadow: 0 0 0 30px #3f4258 inset !important; /* Dark mode bg */
+    -webkit-text-fill-color: #e0e0e0 !important;
 }
 
 /* Process Section */

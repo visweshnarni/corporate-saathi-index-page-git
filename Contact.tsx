@@ -69,8 +69,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <label htmlFor="contact-message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
-                                {/* Fix: Changed rows="3" to rows={3} to pass a number instead of a string. */}
-                                <textarea id="contact-message" name="message" required rows={3} placeholder="I'd like to inquire about..." className="contact-form-input"></textarea>
+                                <textarea id="contact-message" name="message" required rows={3} placeholder="I'd like to inquire about..." className="contact-form-input resize-none"></textarea>
                             </div>
                             <button type="submit" className="w-full bg-brand-purple text-white py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-colors">Send Message</button>
                         </form>
