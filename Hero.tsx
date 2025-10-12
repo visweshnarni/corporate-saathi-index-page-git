@@ -46,8 +46,8 @@ const Hero = () => {
                     </ScrollAnimator>
                     <ScrollAnimator animation="fade-in-up" delay="0.6s">
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="#contact" className="w-full sm:w-auto bg-brand-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-transform hover:scale-105">Claim Your Free Consultation</a>
-                            <a href="#" className="w-full sm:w-auto bg-white/20 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition-transform hover:scale-105">Download Catalogue</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8OwmZd3IxB4N8IuJDhWSTW428IDoZ2dyux7R17C4SX_7iPQ/viewform" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-brand-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-transform hover:scale-105">Claim Your Free Consultation</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-wXH0sXUKgkGTSBlt9_sHBMrIjPbzWJ937k74KQRiE4g-UA/viewform" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white/20 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition-transform hover:scale-105">Claim Launch Offer</a>
                         </div>
                     </ScrollAnimator>
                 </div>

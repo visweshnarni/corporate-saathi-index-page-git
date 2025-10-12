@@ -121,6 +121,18 @@ const WhyChooseUs = () => {
                                 </div>
                                 <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">Startup India Recognized</p>
                             </div>
+                            <div className="text-center">
+                                <div className="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://seeklogo.com/images/A/aatmanirbhar-bharat-abhiyan-logo-339A325853-seeklogo.com.png" alt="Atmanirbhar Bharat" className="h-auto w-28 object-contain"/>
+                                </div>
+                                <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">Atmanirbhar Bharat</p>
+                            </div>
+                            <div className="text-center">
+                                <div className="bg-white p-3 rounded-full w-32 h-32 flex items-center justify-center transition duration-300 shadow-md hover:shadow-xl hover:scale-105">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Make_in_India_logo.svg/240px-Make_in_India_logo.svg.png" alt="Make in India" className="h-auto w-24 object-contain"/>
+                                </div>
+                                <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">Make in India</p>
+                            </div>
                         </div>
                     </div>
                 </ScrollAnimator>

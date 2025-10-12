@@ -5,6 +5,7 @@ import About from './About';
 import Plans from './Plans';
 import Process from './Process';
 import WhyChooseUs from './WhyChooseUs';
+import CustomerReviews from './CustomerReviews';
 import TrustedBy from './TrustedBy';
 import Blogs from './Blogs';
 import Contact from './Contact';
@@ -65,6 +66,7 @@ const App = () => {
                     <Plans onGetStarted={showLoginPage} />
                     <Process />
                     <WhyChooseUs />
+                    <CustomerReviews />
                     <TrustedBy />
                     <Blogs />
                     <Contact />

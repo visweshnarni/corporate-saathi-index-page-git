@@ -14,18 +14,18 @@ const TrustedBy = () => {
                 <h3 className="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Our Trusted Partners</h3>
                 <div className="marquee">
                     <div className="marquee-content">
-                        <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" className="marquee-logo"/>
                         <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/slack.com" alt="Slack" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/notion.so" alt="Notion" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/freshworks.com" alt="Freshworks" className="marquee-logo"/>
                         <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/jodo.in" alt="Jodo" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/icicibank.com" alt="ICICI Bank" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/paytm.com" alt="Paytm" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/wordpress.com" alt="Wordpress" className="marquee-logo"/>
                         <img src="https://logo.clearbit.com/zoho.com" alt="Zoho" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/slack.com" alt="Slack" className="marquee-logo"/>
-                        <img src="https://logo.clearbit.com/notion.so" alt="Notion" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/freshworks.com" alt="Freshworks" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/razorpay.com" alt="Razorpay" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/icicibank.com" alt="ICICI Bank" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/paytm.com" alt="Paytm" className="marquee-logo"/>
+                        <img src="https://logo.clearbit.com/wordpress.com" alt="Wordpress" className="marquee-logo"/>
                     </div>
                 </div>
             </ScrollAnimator>
@@ -35,18 +35,22 @@ const TrustedBy = () => {
                     <h3 className="text-center text-xl font-semibold text-slate-700 dark:text-slate-300 mb-10">Featured On</h3>
                     <div className="marquee">
                         <div className="marquee-content reverse">
-                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" className="marquee-logo" />
-                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="#StartupIndia" className="marquee-logo" />
-                            <img src="https://logo.clearbit.com/startup-insider.com" alt="StartupInsider" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/yourstory.com" alt="StartupByDoc (represented by YourStory)" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/inc42.com" alt="Inc42" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/economictimes.indiatimes.com" alt="The Economic Times" className="marquee-logo"/>
-                            <img src="https://logo.clearbit.com/forbesindia.com" alt="Forbes India" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/startupbydoc.com" alt="Startup by Doc" className="marquee-logo" />
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="YourStory" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yoast.com" alt="Yoast News" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/news29.tv" alt="News 29 TV" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/thenewsroom.com" alt="The News Room" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/theinfluencerstory.com" alt="The Influencers Story" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/businessofceo.com" alt="Business of CEO" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/startupbydoc.com" alt="Startup by Doc" className="marquee-logo" />
+                            <img src="https://logo.clearbit.com/yourstory.com" alt="YourStory" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/startupindia.gov.in" alt="Startup India" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/yoast.com" alt="Yoast News" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/news29.tv" alt="News 29 TV" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/thenewsroom.com" alt="The News Room" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/theinfluencerstory.com" alt="The Influencers Story" className="marquee-logo"/>
+                            <img src="https://logo.clearbit.com/businessofceo.com" alt="Business of CEO" className="marquee-logo"/>
                         </div>
                     </div>
                 </div>
