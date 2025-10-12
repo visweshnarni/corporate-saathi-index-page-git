@@ -30,7 +30,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white">Phone</h4>
-                                    <a href="tel:+911234567890" className="text-slate-300 hover:text-white transition-colors">+91 123 456 7890</a>
+                                    <a href="tel:+9102269622654" className="text-slate-300 hover:text-white transition-colors">+91 022 6962 2654</a>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
@@ -48,7 +48,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-white">Address</h4>
-                                    <p className="text-slate-300">123 Business Avenue, Startup City, India</p>
+                                    <p className="text-slate-300">Floor No. 3, CorporateSaathi HQ, Near Peninsula Corporate Park, Lower Parel, Mumbai - 400...</p>
                                 </div>
                             </div>
                          </div>

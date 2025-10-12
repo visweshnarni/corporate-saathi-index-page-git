@@ -14,10 +14,11 @@ const Hero = () => {
                                 <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
                                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
                             </svg>
+                            <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="#00B67A" xmlns="http://www.w3.org/2000/svg"><path d="M22.56,9.25,16.4,8.62l-2.6-5.32a.79.79,0,0,0-1.4,0L9.8,8.62,3.64,9.25a.79.79,0,0,0-.44,1.35l4.5,4.38-1.06,6.17a.79.79,0,0,0,1.15.83L12,19.23l5.52,2.9a.79.79,0,0,0,1.15-.83l-1.06-6.17,4.5-4.38A.79.79,0,0,0,22.56,9.25Z"/></svg>
                             <div className="hidden sm:flex -space-x-2 overflow-hidden">
-                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/women/79.jpg" alt="User review photo" />
-                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User review photo" />
-                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/women/44.jpg" alt="User review photo" />
+                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/men/60.jpg" alt="User review photo" />
+                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/women/60.jpg" alt="User review photo" />
+                                <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white/30" src="https://randomuser.me/api/portraits/men/61.jpg" alt="User review photo" />
                             </div>
                             <div className="flex items-center text-yellow-400">
                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -34,7 +35,7 @@ const Hero = () => {
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" fill="url(#grad_4_8)"/>
                                 </svg>
                             </div>
-                            <p className="text-white text-sm font-medium">4.8/5 <span className="hidden sm:inline">(19k+ Reviews)</span></p>
+                            <p className="text-white text-sm font-medium">Rated 4.8/5 on Google & Trustpilot</p>
                         </div>
                     </ScrollAnimator>
                     <ScrollAnimator animation="fade-in-up" delay="0.2s">

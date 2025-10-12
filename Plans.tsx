@@ -7,10 +7,12 @@ const Plans = ({ onGetStarted }) => {
             name: 'Startup Plan',
             description: 'For new founders',
             price: '₹999',
+            priceSuffix: '+ Govt Fees',
             features: [
                 'Company Incorporation',
-                'PAN/TAN Registration',
-                'Compliance Calendar (Basic)',
+                'PAN / TAN Registration',
+                'Digital Signature Certificate',
+                'Annual Compliances',
                 'Any time free customer support',
             ],
             isRecommended: false,
@@ -19,12 +21,14 @@ const Plans = ({ onGetStarted }) => {
         {
             name: 'Business Plan',
             description: 'For growing businesses',
-            price: '₹2999',
+            price: '₹4999',
+            priceSuffix: '+ Govt Fee',
             features: [
-                'Everything in Startup Plan',
+                'All in Startup Plan',
                 'Udyam Registration',
-                'Digital Signature Certificate',
-                'Legal Consultation',
+                'GST Registration & Returns',
+                'Income Tax (Compliance & Return)',
+                'Business Welcome Kit',
             ],
             isRecommended: true,
             delay: '0.2s',
@@ -32,12 +36,17 @@ const Plans = ({ onGetStarted }) => {
         {
             name: 'Enterprise Plan',
             description: 'For scaling companies',
-            price: '₹4999',
+            price: '₹9999',
+            priceSuffix: '+ Govt Fee',
             features: [
-                'Everything in Business Plan',
+                'All in Business Plan',
                 'Trademark Registration',
-                'GST Registration & Compliance',
+                'FSSAI License',
+                'Shareholders Certificate',
+                'Company Letter Head',
+                'Company Stamp',
                 'Dedicated Account Manager',
+                'Premium Welcome Kit',
             ],
             isRecommended: false,
             delay: '0.4s',
@@ -61,7 +70,7 @@ const Plans = ({ onGetStarted }) => {
                                 <div className="flex-grow">
                                     <h3 className="text-xl font-bold">{plan.name}</h3>
                                     <p className="text-slate-500 dark:text-slate-400 mb-6">{plan.description}</p>
-                                    <p className="text-4xl font-bold mb-6">{plan.price} <span className="text-base font-normal text-slate-500">/ one-time</span></p>
+                                    <p className="text-4xl font-bold mb-6">{plan.price} <span className="text-base font-normal text-slate-500">{plan.priceSuffix}</span></p>
                                     <ul className="space-y-3 text-slate-600 dark:text-slate-300 mb-8">
                                         {plan.features.map(feature => (
                                             <li key={feature} className="flex items-center">
