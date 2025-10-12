@@ -12,6 +12,8 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Login from './Login';
 import Form from './Form';
+import Popup from './Popup';
+import Chatbot from './Chatbot';
 
 const App = () => {
     const [theme, setTheme] = useState('light');
@@ -87,7 +89,13 @@ const App = () => {
         }
     };
 
-    return <>{renderPage()}</>;
+    return (
+        <>
+            {renderPage()}
+            <Popup />
+            <Chatbot />
+        </>
+    );
 };
 
 export default App;
