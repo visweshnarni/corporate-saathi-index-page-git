@@ -18,7 +18,7 @@ const Contact = () => {
                     <p className="text-slate-500 dark:text-slate-400 mt-2 max-w-2xl mx-auto">Have a question or need a custom quote? We'd love to hear from you. Reach out and we'll get back to you shortly.</p>
                 </div>
                 <div className="max-w-4xl mx-auto grid md:grid-cols-2 rounded-2xl shadow-xl overflow-hidden">
-                    <div className="bg-brand-dark p-8 space-y-8">
+                    <div className="bg-brand-dark p-6 sm:p-8 space-y-8">
                          <div>
                             <h3 className="text-2xl font-bold text-white mb-4">Contact Information</h3>
                             <p className="text-slate-300">Fill up the form and our Team will get back to you within 24 hours.</p>
@@ -53,8 +53,8 @@ const Contact = () => {
                             </div>
                          </div>
                     </div>
-                    <div className="bg-white dark:bg-brand-dark p-8">
-                        <form id="contact-form" className="space-y-8" onSubmit={handleSubmit}>
+                    <div className="bg-white dark:bg-brand-dark p-6 sm:p-8">
+                        <form id="contact-form" className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="contact-name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Your Name</label>
                                 <input type="text" id="contact-name" name="name" required placeholder="John Doe" className="contact-form-input" />

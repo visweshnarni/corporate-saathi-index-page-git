@@ -59,7 +59,7 @@ const Chatbot = () => {
     return (
         <div className="fixed bottom-5 left-5 z-50">
             {/* Chat Window */}
-            <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
+            <div className={`absolute bottom-full mb-4 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
                 <div className="w-80 sm:w-96 h-[500px] bg-white dark:bg-brand-light rounded-xl shadow-2xl flex flex-col border border-slate-200 dark:border-slate-700 overflow-hidden">
                     {/* Header */}
                     <div className="bg-brand-purple text-white p-4 flex justify-between items-center">

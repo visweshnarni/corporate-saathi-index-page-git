@@ -92,13 +92,16 @@ const Footer = () => {
                 </div>
                 
                 <div className="border-t border-slate-700 pt-6 mt-12">
-                    <div className="flex flex-col sm:flex-row justify-center items-center text-center space-y-4 sm:space-y-0 sm:space-x-8 mb-6">
-                        <a href="#" className="hover:text-white text-sm">About Us</a>
+                    <div className="flex flex-wrap justify-center items-center text-center gap-x-8 gap-y-4 mb-6">
+                        <a href="#about" className="hover:text-white text-sm">About Us</a>
                         <a href="#" className="hover:text-white text-sm">Our Product</a>
                         <a href="#" className="hover:text-white text-sm">News</a>
                         <a href="#" className="hover:text-white text-sm">Blogs</a>
                         <a href="#" className="hover:text-white text-sm">Careers</a>
                         <a href="#" className="hover:text-white text-sm">Partner with Us</a>
+                        <a href="footerpages/privacy policy.html" className="hover:text-white text-sm">Privacy Policy</a>
+                        <a href="footerpages/terms and conditions.html" className="hover:text-white text-sm">Terms and Conditions</a>
+                        <a href="footerpages/refund policy.html" className="hover:text-white text-sm">Refund Policy</a>
                     </div>
                 </div>
 
