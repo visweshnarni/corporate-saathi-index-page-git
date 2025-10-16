@@ -1,6 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, ReactNode } from 'react';
 
-const ScrollAnimator = ({ children, animation = 'fade-in-up', delay = '0s', className = '' }) => {
+// FIX: Add explicit prop types to fix multiple TypeScript errors.
+type ScrollAnimatorProps = {
+    children: ReactNode;
+    animation?: string;
+    delay?: string;
+    className?: string;
+};
+
+const ScrollAnimator = ({ children, animation = 'fade-in-up', delay = '0s', className = '' }: ScrollAnimatorProps) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
 

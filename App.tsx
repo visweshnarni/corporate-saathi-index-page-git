@@ -12,7 +12,6 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Login from './Login';
 import Form from './Form';
-import Popup from './Popup';
 import Chatbot from './Chatbot';
 
 const App = () => {
@@ -92,7 +91,6 @@ const App = () => {
     return (
         <>
             {renderPage()}
-            <Popup />
             <Chatbot />
         </>
     );

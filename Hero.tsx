@@ -2,7 +2,8 @@ import React from 'react';
 import ScrollAnimator from './ScrollAnimator';
 
 // Star component to render a single star, supports partial filling for fractional ratings
-const Star = ({ percent }) => { // percent is 0 to 1
+// FIX: Add explicit type for props to ensure it is treated as a React component.
+const Star = ({ percent }: { percent: number }) => { // percent is 0 to 1
     return (
         <div className="relative w-5 h-5" aria-hidden="true">
             {/* Background star (empty) */}
@@ -78,7 +79,7 @@ const Hero = () => {
                     <ScrollAnimator animation="fade-in-up" delay="0.6s">
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8OwmZd3IxB4N8IuJDhWSTW428IDoZ2dyux7R17C4SX_7iPQ/viewform" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-brand-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-purple-light transition-transform hover:scale-105">Claim Your Free Consultation</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-wXH0sXUKgkGTSBlt9_sHBMrIjPbzWJ937k74KQRiE4g-UA/viewform" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white text-brand-purple px-8 py-3 rounded-lg font-semibold hover:bg-slate-200 transition-colors animate-pulse-bright">Claim Launch Offer</a>
+                            <a href="#" className="w-full sm:w-auto bg-white text-brand-purple px-8 py-3 rounded-lg font-semibold hover:bg-slate-200 transition-colors">Download Catalogue</a>
                         </div>
                     </ScrollAnimator>
                 </div>
